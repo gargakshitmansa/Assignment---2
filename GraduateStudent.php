@@ -1,7 +1,7 @@
 <?php
     require_once 'Student.php';
 
-    class GraduateStudent extends Person{
+    class GraduateStudent extends Student {
         protected string $researchTopic;
 
         public function __construct(
@@ -10,13 +10,13 @@
             string $crn,
             string $branch,
             string $researchTopic
-        ){
-            parent :: __construct($name, $email, $crn, $branch);
+        ) {
+            parent::__construct($name, $email, $crn, $branch);
 
-            $this->crn = $researchTopic;
+            $this->researchTopic = $researchTopic;
         }
 
-        public function getResearchTopic(): string{
+        public function getResearchTopic(): string {
             return $this->researchTopic;
         }
     }
