@@ -20,7 +20,8 @@
         public function getCrn(): string{
             return $this->crn;
         }
-        public function getbranch(): string{
+
+        public function getBranch(): string{
             return $this->branch;
         }
     }
